@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a237e;
+  --navy: #1a237e;
+  --navy-dark: #0d1642;
+  --cyan: #00bcd4;
+  --cyan-light: #40e0d0;
+  --orange: #e64a19;
+  --red-accent: #e53935;
+  --muted: #5c6bc0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-navy: var(--navy);
+  --color-navy-dark: var(--navy-dark);
+  --color-cyan: var(--cyan);
+  --color-cyan-light: var(--cyan-light);
+  --color-orange: var(--orange);
+  --color-red-accent: var(--red-accent);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-montserrat);
+  --font-serif: var(--font-playfair);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+}
+
+.font-serif {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.lotus-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--cyan);
+}
+
+.lotus-divider::before,
+.lotus-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    to var(--direction, right),
+    transparent,
+    var(--cyan),
+    transparent
+  );
+}
+
+.lotus-divider::before {
+  --direction: right;
+}
+
+.lotus-divider::after {
+  --direction: left;
+}
+
+.gallery-scroll {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.gallery-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-slide {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
