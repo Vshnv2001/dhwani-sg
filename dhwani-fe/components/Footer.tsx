@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { contact } from "@/lib/academy-content";
-import { academyLinks, aboutLinks } from "@/lib/site-nav";
+import { academyLinks, aboutLinks, galleryLink } from "@/lib/site-nav";
 
 function LotusIcon({ className }: { className?: string }) {
   return (
@@ -54,6 +54,9 @@ export default function Footer() {
               {label}
             </Link>
           ))}
+          <Link href={galleryLink.href} className="text-navy/70 transition-colors hover:text-cyan">
+            {galleryLink.label}
+          </Link>
         </div>
 
         <p className="mt-8 text-center text-xs text-muted/70">

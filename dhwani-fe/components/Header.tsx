@@ -190,6 +190,17 @@ export default function Header({ academyLinks, aboutLinks }: HeaderProps) {
             isActive={isAboutPath(pathname)}
             pathname={pathname}
           />
+
+          <Link
+            href="/gallery"
+            className={`font-medium transition-colors ${
+              pathname === "/gallery"
+                ? "text-cyan border-b-2 border-cyan pb-0.5"
+                : "text-navy hover:text-cyan"
+            }`}
+          >
+            Gallery
+          </Link>
         </nav>
 
         <div className={`flex items-center justify-self-end gap-2 ${brandImageHeight}`}>
@@ -258,6 +269,16 @@ export default function Header({ academyLinks, aboutLinks }: HeaderProps) {
               }}
               onNavigate={closeMenu}
             />
+
+            <Link
+              href="/gallery"
+              onClick={closeMenu}
+              className={`text-lg font-medium ${
+                pathname === "/gallery" ? "text-cyan" : "text-navy hover:text-cyan"
+              }`}
+            >
+              Gallery
+            </Link>
           </div>
         </nav>
       )}

@@ -15,6 +15,8 @@ export const aboutLinks: NavLink[] = [
   { href: "/about/past-work", label: "Past Work" },
 ];
 
+export const galleryLink: NavLink = { href: "/gallery", label: "Gallery" };
+
 export function isAcademyPath(pathname: string): boolean {
   return academyLinks.some(({ href }) => pathname === href);
 }
