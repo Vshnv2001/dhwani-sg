@@ -147,19 +147,25 @@ export default function Header({ academyLinks, aboutLinks }: HeaderProps) {
     setAboutExpanded(false);
   };
 
+  const brandImageHeight = "h-[7.5rem] sm:h-[8.5rem] md:h-[9.5rem] lg:h-[10.75rem]";
+
   return (
     <header className="sticky top-0 z-50 border-b border-cyan/20 bg-white/95 backdrop-blur-sm">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-        <Link href="/" className="flex items-center" onClick={closeMenu}>
+      <div className="mx-auto grid max-w-6xl grid-cols-[1fr_auto_1fr] items-center gap-4 px-6 py-5">
+        <Link
+          href="/"
+          className={`flex items-center justify-self-start ${brandImageHeight}`}
+          onClick={closeMenu}
+        >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/dhwani_logo.svg"
             alt="Dhwani Music Academy"
-            className="h-auto w-56 sm:w-64 md:w-72 lg:w-80"
+            className="max-h-full w-auto"
           />
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center justify-center gap-6 lg:gap-8 md:flex">
           <Link
             href="/"
             className={`font-medium transition-colors ${
@@ -186,23 +192,32 @@ export default function Header({ academyLinks, aboutLinks }: HeaderProps) {
           />
         </nav>
 
-        <button
-          type="button"
-          className="flex flex-col gap-1.5 p-2 md:hidden"
-          aria-label="Toggle menu"
-          aria-expanded={menuOpen}
-          onClick={() => setMenuOpen((open) => !open)}
-        >
-          <span
-            className={`block h-0.5 w-6 bg-navy transition-transform ${menuOpen ? "translate-y-2 rotate-45" : ""}`}
+        <div className={`flex items-center justify-self-end gap-2 ${brandImageHeight}`}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/assets/kamakshi_amman.jpg"
+            alt="Kamakshi Amman"
+            className="hidden max-h-full w-auto rounded-md object-contain md:block"
           />
-          <span
-            className={`block h-0.5 w-6 bg-navy transition-opacity ${menuOpen ? "opacity-0" : ""}`}
-          />
-          <span
-            className={`block h-0.5 w-6 bg-navy transition-transform ${menuOpen ? "-translate-y-2 -rotate-45" : ""}`}
-          />
-        </button>
+
+          <button
+            type="button"
+            className="flex flex-col gap-1.5 p-2 md:hidden"
+            aria-label="Toggle menu"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((open) => !open)}
+          >
+            <span
+              className={`block h-0.5 w-6 bg-navy transition-transform ${menuOpen ? "translate-y-2 rotate-45" : ""}`}
+            />
+            <span
+              className={`block h-0.5 w-6 bg-navy transition-opacity ${menuOpen ? "opacity-0" : ""}`}
+            />
+            <span
+              className={`block h-0.5 w-6 bg-navy transition-transform ${menuOpen ? "-translate-y-2 -rotate-45" : ""}`}
+            />
+          </button>
+        </div>
       </div>
 
       {menuOpen && (
