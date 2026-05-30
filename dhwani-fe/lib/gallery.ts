@@ -6,7 +6,12 @@ export type GalleryImage = {
   alt: string;
 };
 
-const EXCLUDED = new Set(["dhwani_logo.png", "Kamakshi Amman.jpg"]);
+const EXCLUDED = new Set([
+  "dhwani_logo.png",
+  "Kamakshi Amman.jpg",
+  "kamakshi_amman.jpg",
+  "Pravarthika.png",
+]);
 
 function humanizeFilename(filename: string): string {
   return filename
