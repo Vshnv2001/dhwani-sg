@@ -39,7 +39,7 @@ export default function ContactSection() {
             rel="noopener noreferrer"
             className="mt-6 inline-flex w-fit items-center rounded-full bg-red-accent px-8 py-3 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-orange"
           >
-            Book a Lesson Demo
+            Sample Lesson
           </a>
         </div>
       </div>

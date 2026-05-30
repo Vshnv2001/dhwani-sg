@@ -1,0 +1,53 @@
+import Link from "next/link";
+import LotusDivider from "@/components/LotusDivider";
+import type { HomeQuote } from "@/lib/home-quotes";
+
+type HomeQuotesProps = {
+  quotes: HomeQuote[];
+};
+
+export default function HomeQuotes({ quotes }: HomeQuotesProps) {
+  return (
+    <section className="border-y border-cyan/15 bg-cyan/5 px-6 py-12">
+      <div className="mx-auto max-w-6xl">
+        <h2 className="text-center font-serif text-2xl font-semibold text-navy md:text-3xl">
+          What Students <span className="text-red-accent">Say</span>
+        </h2>
+        <LotusDivider />
+
+        <div className="grid gap-6 md:grid-cols-2">
+          {quotes.map((item) => (
+            <figure
+              key={item.name}
+              className="rounded-2xl border border-cyan/20 bg-white p-6 shadow-sm md:p-8"
+            >
+              <blockquote>
+                <span className="font-serif text-3xl leading-none text-cyan/40" aria-hidden="true">
+                  &ldquo;
+                </span>
+                <p className="-mt-2 text-sm leading-relaxed text-neutral-700 md:text-base">
+                  {item.quote}
+                </p>
+              </blockquote>
+              <figcaption className="mt-4 border-t border-cyan/15 pt-4">
+                <p className="font-serif font-semibold text-navy">{item.name}</p>
+                {item.role && (
+                  <p className="mt-0.5 text-xs text-muted">{item.role}</p>
+                )}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+
+        <p className="mt-8 text-center">
+          <Link
+            href="/about/testimonials"
+            className="text-sm font-medium text-cyan transition-colors hover:text-navy"
+          >
+            Read more testimonials &rarr;
+          </Link>
+        </p>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,46 @@
+achievements:
+  - year: 2026
+    sortOrder: 1
+    title: Purandara Dasa Competition
+    media:
+      - type: youtube
+        url: https://youtu.be/0cXb0z39MZI
+        caption: Sravani Nagella — 1st prize, Senior Vocal
+      - type: youtube
+        url: https://youtu.be/Hd1ZjZolvwo
+        caption: Group Vocal — 1st prize (Manasa, Yuthika, Mridula & Harinee)
+      - type: youtube
+        url: https://youtube.com/shorts/ac4NVAO9DHQ
+        caption: Praharshitha Madhusudanan — 1st prize, Violin Solo Junior
+      - type: youtube
+        url: https://youtube.com/shorts/kZmQQCvGG_U
+        caption: Preeti Radhakrishnan — 2nd prize, Vocal Senior
+
+  - year: 2026
+    sortOrder: 2
+    title: Singai Palliya Virudhu
+    media:
+      - type: photo
+        src: /assets/2026_singai_varnam_kriti_1st.jpg
+        caption: Varnam/Kriti category — 1st prize
+      - type: photo
+        src: /assets/2026_singai_junior_1st.jpg
+        caption: Junior category — 1st prize
+      - type: photo
+        src: /assets/2026_singai_yuthikasree_1st.jpg
+        caption: Yuthikasree — 1st prize (Violin Junior)
+      - type: photo
+        src: /assets/2026_singai_yadhana_2nd.jpg
+        caption: Yadhana — 2nd prize (Violin Junior)
+      - type: photo
+        src: /assets/2026_singai_sahana_arun_2nd.jpg
+        caption: Sahana & Arun — 2nd prize (Vocal Junior)
+      - type: photo
+        src: /assets/2026_singai_mahathi_ashivtha_3rd.jpg
+        caption: Mahathi & Ashivtha — 3rd prize (Violin Open)
+      - type: photo
+        src: /assets/2026_singai_vaibhav.jpg
+        caption: Vaibhav — Singai Palliya Virudhu
+      - type: photo
+        src: /assets/2026_singai_student_performance.jpg
+        caption: Student performance at Singai Palliya Virudhu

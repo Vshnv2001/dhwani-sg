@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { contact } from "@/lib/academy-content";
+import { academyLinks, aboutLinks } from "@/lib/site-nav";
 
 function LotusIcon({ className }: { className?: string }) {
   return (
@@ -39,20 +40,24 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm sm:justify-end">
+        <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm sm:justify-end">
           <Link href="/" className="text-navy/70 transition-colors hover:text-cyan">
             Home
           </Link>
-          <Link href="/about" className="text-navy/70 transition-colors hover:text-cyan">
-            About
-          </Link>
-          <Link href="/gallery" className="text-navy/70 transition-colors hover:text-cyan">
-            Gallery
-          </Link>
+          {academyLinks.map(({ href, label }) => (
+            <Link key={href} href={href} className="text-navy/70 transition-colors hover:text-cyan">
+              {label}
+            </Link>
+          ))}
+          {aboutLinks.map(({ href, label }) => (
+            <Link key={href} href={href} className="text-navy/70 transition-colors hover:text-cyan">
+              {label}
+            </Link>
+          ))}
         </div>
 
         <p className="mt-8 text-center text-xs text-muted/70">
-          &copy; {new Date().getFullYear()} Dhwani Music Academy &mdash; Bharati Murali, Singapore
+          &copy; {new Date().getFullYear()} &nbsp; Dhwani Music Academy &mdash; Bharati Murali, Singapore
         </p>
       </div>
     </footer>

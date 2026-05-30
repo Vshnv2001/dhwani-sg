@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat, Playfair_Display } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { academyLinks, aboutLinks } from "@/lib/site-nav";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -34,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${montserrat.variable} ${playfair.variable} h-full`}>
       <body className="flex min-h-full flex-col bg-white antialiased">
-        <Header />
+        <Header academyLinks={academyLinks} aboutLinks={aboutLinks} />
         <main className="flex-1">{children}</main>
         <Footer />
       </body>
