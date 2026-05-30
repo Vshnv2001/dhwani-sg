@@ -150,7 +150,7 @@ export default function Header({ academyLinks, aboutLinks }: HeaderProps) {
   const brandImageHeight = "h-[7.5rem] sm:h-[8.5rem] md:h-[9.5rem] lg:h-[10.75rem]";
 
   return (
-    <header className="sticky top-0 z-50 border-b border-cyan/20 bg-white/95 backdrop-blur-sm">
+    <header className="navbar-mandala sticky top-0 z-50 border-b border-cyan/20 backdrop-blur-sm">
       <div className="mx-auto grid max-w-6xl grid-cols-[1fr_auto_1fr] items-center gap-4 px-6 py-5">
         <Link
           href="/"
@@ -232,7 +232,7 @@ export default function Header({ academyLinks, aboutLinks }: HeaderProps) {
       </div>
 
       {menuOpen && (
-        <nav className="border-t border-cyan/20 bg-white px-6 py-4 md:hidden">
+        <nav className="border-t border-cyan/20 bg-white/60 px-6 py-4 backdrop-blur-sm md:hidden">
           <div className="flex flex-col gap-4">
             <Link
               href="/"

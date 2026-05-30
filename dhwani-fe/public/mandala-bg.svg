@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00bcd4" stop-opacity="0.18" />
+      <stop offset="55%" stop-color="#00bcd4" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#1a237e" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <circle cx="500" cy="500" r="490" fill="url(#glow)" />
+
+  <g stroke="#00bcd4" stroke-width="1.2" opacity="0.16">
+    <circle cx="500" cy="500" r="460" />
+    <circle cx="500" cy="500" r="420" />
+    <circle cx="500" cy="500" r="360" />
+    <circle cx="500" cy="500" r="300" />
+    <circle cx="500" cy="500" r="240" />
+    <circle cx="500" cy="500" r="180" />
+    <circle cx="500" cy="500" r="120" />
+    <circle cx="500" cy="500" r="60" />
+  </g>
+
+  <g stroke="#1a237e" stroke-width="1" opacity="0.1">
+    <circle cx="500" cy="500" r="390" />
+    <circle cx="500" cy="500" r="330" />
+    <circle cx="500" cy="500" r="270" />
+    <circle cx="500" cy="500" r="210" />
+    <circle cx="500" cy="500" r="150" />
+    <circle cx="500" cy="500" r="90" />
+  </g>
+
+  <g stroke="#00bcd4" stroke-width="1.4" opacity="0.2" fill="#00bcd4" fill-opacity="0.04">
+    <path d="M500 500 C512 420 548 340 500 260 C452 340 488 420 500 500 Z" />
+    <path d="M500 500 C512 420 548 340 500 260 C452 340 488 420 500 500 Z" transform="rotate(30 500 500)" />
+    <path d="M500 500 C512 420 548 340 500 260 C452 340 488 420 500 500 Z" transform="rotate(60 500 500)" />
+    <path d="M500 500 C512 420 548 340 500 260 C452 340 488 420 500 500 Z" transform="rotate(90 500 500)" />
+    <path d="M500 500 C512 420 548 340 500 260 C452 340 488 420 500 500 Z" transform="rotate(120 500 500)" />
+    <path d="M500 500 C512 420 548 340 500 260 C452 340 488 420 500 500 Z" transform="rotate(150 500 500)" />
+    <path d="M500 500 C512 420 548 340 500 260 C452 340 488 420 500 500 Z" transform="rotate(180 500 500)" />
+    <path d="M500 500 C512 420 548 340 500 260 C452 340 488 420 500 500 Z" transform="rotate(210 500 500)" />
+    <path d="M500 500 C512 420 548 340 500 260 C452 340 488 420 500 500 Z" transform="rotate(240 500 500)" />
+    <path d="M500 500 C512 420 548 340 500 260 C452 340 488 420 500 500 Z" transform="rotate(270 500 500)" />
+    <path d="M500 500 C512 420 548 340 500 260 C452 340 488 420 500 500 Z" transform="rotate(300 500 500)" />
+    <path d="M500 500 C512 420 548 340 500 260 C452 340 488 420 500 500 Z" transform="rotate(330 500 500)" />
+  </g>
+
+  <g stroke="#e53935" stroke-width="0.9" opacity="0.12" fill="#e53935" fill-opacity="0.03">
+    <path d="M500 500 C505 455 530 410 500 370 C470 410 495 455 500 500 Z" />
+    <path d="M500 500 C505 455 530 410 500 370 C470 410 495 455 500 500 Z" transform="rotate(45 500 500)" />
+    <path d="M500 500 C505 455 530 410 500 370 C470 410 495 455 500 500 Z" transform="rotate(90 500 500)" />
+    <path d="M500 500 C505 455 530 410 500 370 C470 410 495 455 500 500 Z" transform="rotate(135 500 500)" />
+    <path d="M500 500 C505 455 530 410 500 370 C470 410 495 455 500 500 Z" transform="rotate(180 500 500)" />
+    <path d="M500 500 C505 455 530 410 500 370 C470 410 495 455 500 500 Z" transform="rotate(225 500 500)" />
+    <path d="M500 500 C505 455 530 410 500 370 C470 410 495 455 500 500 Z" transform="rotate(270 500 500)" />
+    <path d="M500 500 C505 455 530 410 500 370 C470 410 495 455 500 500 Z" transform="rotate(315 500 500)" />
+  </g>
+
+  <g fill="#00bcd4" opacity="0.14">
+    <circle cx="500" cy="40" r="5" />
+    <circle cx="500" cy="960" r="5" />
+    <circle cx="40" cy="500" r="5" />
+    <circle cx="960" cy="500" r="5" />
+    <circle cx="175" cy="175" r="4" />
+    <circle cx="825" cy="175" r="4" />
+    <circle cx="175" cy="825" r="4" />
+    <circle cx="825" cy="825" r="4" />
+  </g>
+
+  <g stroke="#1a237e" stroke-width="0.8" opacity="0.12">
+    <path d="M500 80 L515 130 L565 130 L525 160 L540 210 L500 180 L460 210 L475 160 L435 130 L485 130 Z" />
+    <path d="M500 80 L515 130 L565 130 L525 160 L540 210 L500 180 L460 210 L475 160 L435 130 L485 130 Z" transform="rotate(45 500 500)" />
+    <path d="M500 80 L515 130 L565 130 L525 160 L540 210 L500 180 L460 210 L475 160 L435 130 L485 130 Z" transform="rotate(90 500 500)" />
+    <path d="M500 80 L515 130 L565 130 L525 160 L540 210 L500 180 L460 210 L475 160 L435 130 L485 130 Z" transform="rotate(135 500 500)" />
+    <path d="M500 80 L515 130 L565 130 L525 160 L540 210 L500 180 L460 210 L475 160 L435 130 L485 130 Z" transform="rotate(180 500 500)" />
+    <path d="M500 80 L515 130 L565 130 L525 160 L540 210 L500 180 L460 210 L475 160 L435 130 L485 130 Z" transform="rotate(225 500 500)" />
+    <path d="M500 80 L515 130 L565 130 L525 160 L540 210 L500 180 L460 210 L475 160 L435 130 L485 130 Z" transform="rotate(270 500 500)" />
+    <path d="M500 80 L515 130 L565 130 L525 160 L540 210 L500 180 L460 210 L475 160 L435 130 L485 130 Z" transform="rotate(315 500 500)" />
+  </g>
+
+  <circle cx="500" cy="500" r="24" stroke="#00bcd4" stroke-width="1.5" opacity="0.22" fill="#ffffff" fill-opacity="0.5" />
+  <circle cx="500" cy="500" r="8" fill="#e53935" fill-opacity="0.2" />
+</svg>
