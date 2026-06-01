@@ -35,9 +35,11 @@ export default function TeachingMethodologyPage() {
             <h2 className="mt-5 font-serif text-xl font-semibold text-navy md:text-2xl">
               {entry.title}
             </h2>
-            <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-neutral-700 md:text-base">
-              {entry.description}
-            </p>
+            {entry.description.trim() && (
+              <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-neutral-700 md:text-base">
+                {entry.description}
+              </p>
+            )}
           </article>
         ))}
       </div>

@@ -1,4 +1,20 @@
 pastWork:
+  - year: 2020
+    sortOrder: 100
+    title: The Podi Song (23K views on YouTube)
+    media:
+      - type: youtube
+        url: https://www.youtube.com/watch?v=HleC4LCQXg8
+        caption: The viral Podi Song (23K views on YouTube)
+
+  - year: 2020
+    sortOrder: 101
+    title: Film Songs in Shuddha Dhanyasi
+    media:
+      - type: youtube
+        url: https://www.youtube.com/watch?v=w5TiZSQL7i0
+        caption: Film songs in Shuddha Dhanyasi
+
   - year: 2025
     sortOrder: 1
     title: Composed and taught an RTP to a choir of 40 at SIOC
