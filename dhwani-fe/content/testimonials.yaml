@@ -14,7 +14,7 @@ testimonials:
 
       If you are thinking of joining her, please do so without any second thoughts.
 
-  - name: Sravani
+  - name: Sravani Nagella
     photo: /assets/sravani_1.jpg
     quote: |
       When I started learning Carnatic Vocal at Dhwani Music Academy, I was very weak on my basics such as Taalam and Swarasthanam. I had nearly no knowledge of Carnatic theory and was unable to identify basic taalams and raagas. Bharati Ma'am is very patient with her teaching approach. She always gives her undivided attention to her students, making sure to dedicate herself to training each and every student even in group classes. She takes her time to meticulously teach me the nuances and identify even minute mistakes in my singing, and also makes sure that I understood my mistakes.
@@ -92,6 +92,12 @@ testimonials:
       She encouraged us to participate in competitions and temple performances which really boosted our confidence level and really made us feel happy and also she will ensure her physical presence to cheer us for the performances.
 
       I can clearly see how much I have improved in my music and the credit goes to our teacher Bharathi Murali. We are really fortunate and blessed to have her as our Guru..thank you mam 🙏🏻
+  
+  - name: Anuradha Rajaraman
+    role: Senior Vocal Disciple
+    photo: /assets/aunties/anu.png
+    quote: |
+      Bharathi Aunty is a highly dedicated teacher who is deeply passionate about music. Despite her immense knowledge and experience, she remains humble, patient, and approachable. Her encouragement and commitment to her students make learning from her a truly enriching experience.
 
   - name: Sundari
     role: Parent & Adult Vocal Student
