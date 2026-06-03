@@ -20,6 +20,11 @@ export default function AchievementsTimeline({ entries }: AchievementsTimelinePr
           <p className="mt-2 font-serif text-xl font-semibold text-navy md:text-2xl">
             {entry.title}
           </p>
+          {entry.description && (
+            <p className="mt-3 max-w-3xl text-base leading-relaxed text-neutral-700 md:text-lg">
+              {entry.description}
+            </p>
+          )}
           <LotusDivider />
 
           <MediaCarousel

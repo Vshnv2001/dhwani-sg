@@ -159,7 +159,7 @@ export default function Header({ academyLinks, aboutLinks }: HeaderProps) {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/dhwani_logo.svg"
+            src="/assets/dhwani_logo_original.png"
             alt="Dhwani Music Academy"
             className="max-h-full w-auto"
           />

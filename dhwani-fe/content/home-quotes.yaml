@@ -1,11 +1,19 @@
 quotes:
+  - name: Anuradha Rajaraman
+    role: Senior Vocal Disciple
+    quote: >
+      Bharathi Aunty is a highly dedicated teacher who is deeply passionate about music.
+      Despite her immense knowledge and experience, she remains humble, patient, and
+      approachable. Her encouragement and commitment to her students make learning
+      from her a truly enriching experience.
+
   - name: Aarathi Venugopal
     role: Senior Vocal Disciple
     quote: >
-      After more than 5 years under Bharati ma'am's guidance, and I have
-      grown so much in many aspects. I have opportunities to perform in temples,
-      stage shows, and many more events. Not only Carnatic music, she also trains
-      students in film songs and teaches the correct use of our voice.
+      After more than five years under Bharati ma'am's guidance, I have grown
+      tremendously in many ways. I have had opportunities to perform at temples,
+      stage shows, and many other events. She teaches not only Carnatic music but
+      also film songs, and shows us the correct use of our voice.
 
   - name: Soundarya Ramarajan
     role: Senior Vocal Disciple
@@ -23,10 +31,4 @@ quotes:
       feedback and actively finds performance opportunities for them. We are
       blessed to have such a guru.
 
-  - name: Anuradha Rajaraman
-    role: Senior Vocal Disciple
-    quote: >
-      Bharathi Aunty is a highly dedicated teacher who is deeply passionate about music.
-      Despite her immense knowledge and experience, she remains humble, patient, and
-      approachable. Her encouragement and commitment to her students make learning
-      from her a truly enriching experience.
+

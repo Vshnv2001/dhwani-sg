@@ -1,11 +1,15 @@
 performances:
-  - name: Gayathri Karthik
-    title: Concert Performance for Sri Ranga Ramanuja Maha Desikan Fine Arts
-    youtubeUrl: https://www.youtube.com/watch?v=721b3TBd_DQ
+  - name: Smrithi P.
+    title: Rama Namame Thuthi
+    youtubeUrl: https://youtu.be/8Pu0imde4ko
 
   - name: Anuradha Rajaraman
     title: RTP in Charukesi (Kaa Vaa Vaa) - Originally composed by Sri Papanasam Sivan, retuned by Smt. Bharati Murali
     youtubeUrl: https://youtu.be/y8c83bCqWC0
+
+  - name: Gayathri Karthik
+    title: Concert Performance for Sri Ranga Ramanuja Maha Desikan Fine Arts
+    youtubeUrl: https://www.youtube.com/watch?v=721b3TBd_DQ
 
   - name: Ritisha
     title: Eppo Varuvaro (Jaunpuri Ragam)
@@ -14,3 +18,11 @@ performances:
   - name: Mrinalini
     title: Dheenasharanyane (Karnaranjani Ragam)
     youtubeUrl: https://youtu.be/vSzDcVObgZw
+
+  - name: Vairavimada Kali Temple
+    title: Senior Students Performance (2024)
+    photos:
+      - src: /assets/performances/vairavimada_kali_temple_senior_students.png
+        alt: Senior students at Vairavimada Kali Temple
+      - src: /assets/performances/vairavimada_kali_temple_senior_students_2.png
+        alt: Dhwanistudents at Vairavimada Kali Temple

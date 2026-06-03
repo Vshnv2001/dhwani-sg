@@ -44,3 +44,17 @@ achievements:
       - type: photo
         src: /assets/2026_singai_student_performance.jpg
         caption: Student performance at Singai Palliya Virudhu
+
+  - year: 2024
+    sortOrder: 1
+    title: Avvayar Vizha — Tamil Literary Competition
+    description: >
+      Proud of my student Aparajith who won 3rd prize in the Avvayar Vizha Tamil
+      literary competitions conducted by the Singapore Tamil Language & Cultural
+      Society, where 40+ kids participated. He sang verses from Avvayar's songs
+      set to tune by Bharati Murali in ragamalika, which he learnt in just 2
+      sessions. Congratulations, Aparajith!
+    media:
+      - type: photo
+        src: /assets/students_achievements/aparajith_avvayar_vizha.png
+        caption: Aparajith — 3rd prize, Avvayar Vizha (STLCS)

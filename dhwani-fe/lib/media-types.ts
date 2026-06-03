@@ -16,7 +16,13 @@ export type AchievementEntry = {
   year: number;
   sortOrder?: number;
   title: string;
+  description?: string;
   media: MediaItem[];
+};
+
+export type PerformancePhoto = {
+  src: string;
+  alt?: string;
 };
 
 export type PerformanceEntry = {
@@ -24,6 +30,7 @@ export type PerformanceEntry = {
   title?: string;
   youtubeUrl?: string;
   videoSrc?: string;
+  photos?: PerformancePhoto[];
 };
 
 export function getYouTubeVideoId(url: string): string {

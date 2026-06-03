@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import LocalVideo from "@/components/LocalVideo";
 import LotusDivider from "@/components/LotusDivider";
+import MediaCarousel from "@/components/MediaCarousel";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import { getPerformances } from "@/lib/performances";
 
@@ -35,7 +36,10 @@ export default function PerformancesPage() {
 
       <div className="mx-auto mt-12 grid max-w-5xl gap-10 px-6 md:grid-cols-2">
         {performances.map((performance, index) => (
-          <article key={performanceKey(performance.name, performance.title, index)}>
+          <article
+            key={performanceKey(performance.name, performance.title, index)}
+            className={performance.photos?.length ? "md:col-span-2" : undefined}
+          >
             {performance.youtubeUrl ? (
               <YouTubeEmbed
                 youtubeUrl={performance.youtubeUrl}
@@ -53,6 +57,15 @@ export default function PerformancesPage() {
                     ? `${performance.title} — ${performance.name}`
                     : `Performance by ${performance.name}`
                 }
+              />
+            ) : performance.photos?.length ? (
+              <MediaCarousel
+                media={performance.photos.map((photo) => ({
+                  type: "photo" as const,
+                  src: photo.src,
+                  caption: photo.alt ?? performance.title ?? performance.name,
+                }))}
+                label={`${performance.name} — ${performance.title ?? "Performance"}`}
               />
             ) : null}
             <h2 className="mt-4 font-serif text-xl font-semibold text-navy">

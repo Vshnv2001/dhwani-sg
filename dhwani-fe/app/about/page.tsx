@@ -3,7 +3,7 @@ import Image from "next/image";
 import BioSections from "@/components/BioSections";
 import ContactSection from "@/components/ContactSection";
 import LotusDivider from "@/components/LotusDivider";
-import { getAboutBharatiSections } from "@/lib/about-bharati";
+import { getAboutBharati } from "@/lib/about-bharati";
 
 export const metadata: Metadata = {
   title: "About Bharati Murali",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  const sections = getAboutBharatiSections();
+  const { titleLine, intro, sections } = getAboutBharati();
 
   return (
     <>
@@ -25,11 +25,11 @@ export default function AboutPage() {
             Bharati Murali
           </h1>
           <LotusDivider />
-          <p className="text-lg text-muted">Founder, Dhwani Music Academy</p>
+          <p className="text-lg text-muted">{titleLine}</p>
         </header>
 
-        <div className="mt-10 flex justify-center">
-          <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-cyan/30 shadow-md md:h-56 md:w-56">
+        <div className="mt-10 flex flex-col items-center gap-8 md:flex-row md:items-start">
+          <div className="relative h-48 w-48 shrink-0 overflow-hidden rounded-full border-4 border-cyan/30 shadow-md md:h-56 md:w-56">
             <Image
               src="/assets/bm_violin_1.jpg"
               alt="Bharati Murali"
@@ -39,6 +39,9 @@ export default function AboutPage() {
               priority
             />
           </div>
+          <p className="text-base leading-relaxed text-neutral-800 md:text-lg">
+            {intro}
+          </p>
         </div>
 
         <BioSections sections={sections} />
