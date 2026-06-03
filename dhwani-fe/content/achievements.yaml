@@ -1,4 +1,15 @@
 achievements:
+  - year: 2025
+    sortOrder: 1
+    title: Classical Bhakti Idol (RTV Spiritual)
+    description: >
+      Mrinalini Jai reached the Top 7 out of 3,000 participants in Classical
+      Bhakti Idol, progressing through the semi-finals on RTV Spiritual.
+    media:
+      - type: photo
+        src: /assets/students_achievements/mrinalini_classical_bhakti_idol.png
+        caption: Mrinalini Jai — Top 7, Classical Bhakti Idol
+
   - year: 2026
     sortOrder: 1
     title: Purandara Dasa Competition

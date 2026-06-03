@@ -7,9 +7,10 @@ import type { MediaItem } from "@/lib/media-types";
 type MediaCarouselProps = {
   media: MediaItem[];
   label: string;
+  centered?: boolean;
 };
 
-export default function MediaCarousel({ media, label }: MediaCarouselProps) {
+export default function MediaCarousel({ media, label, centered = false }: MediaCarouselProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -62,10 +63,12 @@ export default function MediaCarousel({ media, label }: MediaCarouselProps) {
   const activeCaption = media[activeIndex]?.caption ?? "";
 
   return (
-    <div>
+    <div className={centered ? "mx-auto max-w-2xl" : undefined}>
       <div
         ref={scrollRef}
-        className="gallery-scroll flex gap-4 overflow-x-auto py-2"
+        className={`gallery-scroll flex gap-4 overflow-x-auto py-2 ${
+          centered && !showControls ? "justify-center" : ""
+        }`}
         aria-label={label}
       >
         {media.map((item, index) => (

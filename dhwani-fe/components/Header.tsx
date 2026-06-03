@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   isAboutPath,
   isAcademyPath,
@@ -22,8 +22,20 @@ function NavDropdown({
   pathname: string;
   onNavigate?: () => void;
 }) {
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  const close = () => setOpen(false);
+
   return (
-    <div className="group relative">
+    <div
+      className="relative"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={close}
+    >
       <button
         type="button"
         className={`flex items-center gap-1 font-medium transition-colors ${
@@ -32,13 +44,14 @@ function NavDropdown({
             : "text-navy hover:text-cyan"
         }`}
         aria-haspopup="true"
-        aria-expanded={isActive}
+        aria-expanded={open}
+        onClick={() => setOpen((current) => !current)}
       >
         {label}
         <svg
           viewBox="0 0 20 20"
           fill="currentColor"
-          className="h-4 w-4 transition-transform group-hover:rotate-180"
+          className={`h-4 w-4 transition-transform ${open ? "rotate-180" : ""}`}
           aria-hidden="true"
         >
           <path
@@ -49,13 +62,20 @@ function NavDropdown({
         </svg>
       </button>
 
-      <div className="invisible absolute left-0 top-full z-50 min-w-[240px] pt-2 opacity-0 transition-all group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+      <div
+        className={`absolute left-0 top-full z-50 min-w-[240px] pt-2 transition-all ${
+          open ? "visible opacity-100" : "invisible opacity-0 pointer-events-none"
+        }`}
+      >
         <div className="overflow-hidden rounded-xl border border-cyan/20 bg-white py-2 shadow-lg">
           {links.map(({ href, label: linkLabel }) => (
             <Link
               key={href}
               href={href}
-              onClick={onNavigate}
+              onClick={() => {
+                close();
+                onNavigate?.();
+              }}
               className={`block px-4 py-2.5 text-sm transition-colors hover:bg-cyan/10 hover:text-cyan ${
                 pathname === href ? "font-medium text-cyan" : "text-navy"
               }`}
@@ -146,6 +166,12 @@ export default function Header({ academyLinks, aboutLinks }: HeaderProps) {
     setAcademyExpanded(false);
     setAboutExpanded(false);
   };
+
+  useEffect(() => {
+    setMenuOpen(false);
+    setAcademyExpanded(false);
+    setAboutExpanded(false);
+  }, [pathname]);
 
   const brandImageHeight = "h-[7.5rem] sm:h-[8.5rem] md:h-[9.5rem] lg:h-[10.75rem]";
 
