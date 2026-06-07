@@ -1,4 +1,8 @@
+import { FacebookIcon, InstagramIcon, MailIcon } from "@/components/ContactIcons";
 import { contact } from "@/lib/academy-content";
+
+const linkClass =
+  "inline-flex items-center gap-3 text-muted transition-colors hover:text-cyan";
 
 export default function ContactSection() {
   return (
@@ -13,19 +17,42 @@ export default function ContactSection() {
             </span>
           </p>
 
-          <dl className="mt-6 space-y-3 text-sm">
-            <div>
-              <dt className="font-medium text-navy">Email</dt>
-              <dd>
-                <a
-                  href={`mailto:${contact.email}`}
-                  className="text-muted transition-colors hover:text-cyan"
-                >
-                  {contact.email}
-                </a>
-              </dd>
-            </div>
-          </dl>
+          <ul className="mt-6 space-y-4 text-sm">
+            <li>
+              <a href={`mailto:${contact.email}`} className={linkClass}>
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-cyan/10 text-navy">
+                  <MailIcon />
+                </span>
+                <span>{contact.email}</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={contact.instagram.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={linkClass}
+              >
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-cyan/10 text-navy">
+                  <InstagramIcon />
+                </span>
+                <span>@{contact.instagram.handle}</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={contact.facebook.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={linkClass}
+              >
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-cyan/10 text-navy">
+                  <FacebookIcon />
+                </span>
+                <span>Bharati Murali</span>
+              </a>
+            </li>
+          </ul>
         </div>
 
         <div className="flex flex-col justify-center">

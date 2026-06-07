@@ -20,6 +20,13 @@ export const contact = {
   location: "Hougang, Singapore",
   email: "dhwanimusicacademysg@gmail.com",
   demoUrl: "https://bit.ly/dhwani-lesson-demo",
+  instagram: {
+    handle: "bharati.murali",
+    url: "https://www.instagram.com/bharati.murali",
+  },
+  facebook: {
+    url: "https://www.facebook.com/bharati.muralidharan.3",
+  },
 };
 
 export const teacherIntro =
