@@ -1,4 +1,4 @@
-import { FacebookIcon, InstagramIcon, MailIcon } from "@/components/ContactIcons";
+import { FacebookIcon, InstagramIcon, MailIcon, YouTubeIcon } from "@/components/ContactIcons";
 import { contact } from "@/lib/academy-content";
 
 const linkClass =
@@ -52,6 +52,21 @@ export default function ContactSection() {
                 <span>Bharati Murali</span>
               </a>
             </li>
+            {contact.youtube.map((channel) => (
+              <li key={channel.url}>
+                <a
+                  href={channel.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={linkClass}
+                >
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-cyan/10 text-navy">
+                    <YouTubeIcon />
+                  </span>
+                  <span>{channel.label}</span>
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 

@@ -60,7 +60,6 @@ export default function MediaCarousel({ media, label, centered = false }: MediaC
   };
 
   const showControls = media.length > 1;
-  const activeCaption = media[activeIndex]?.caption ?? "";
 
   return (
     <div className={centered ? "mx-auto max-w-2xl" : undefined}>
@@ -80,8 +79,6 @@ export default function MediaCarousel({ media, label, centered = false }: MediaC
           </figure>
         ))}
       </div>
-
-      <p className="mt-3 min-h-[1.25rem] text-center text-sm text-muted">{activeCaption}</p>
 
       {showControls && (
         <div className="mt-3 flex items-center justify-center gap-3">

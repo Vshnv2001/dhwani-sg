@@ -1,6 +1,6 @@
 export type MediaItem = {
   type: "photo" | "video" | "youtube";
-  caption: string;
+  caption?: string;
   src?: string;
   url?: string;
 };

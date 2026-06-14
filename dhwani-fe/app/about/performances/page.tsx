@@ -63,7 +63,6 @@ export default function PerformancesPage() {
                 media={performance.photos.map((photo) => ({
                   type: "photo" as const,
                   src: photo.src,
-                  caption: photo.alt ?? performance.title ?? performance.name,
                 }))}
                 label={`${performance.name} — ${performance.title ?? "Performance"}`}
               />

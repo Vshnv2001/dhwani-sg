@@ -8,7 +8,6 @@ achievements:
     media:
       - type: photo
         src: /assets/students_achievements/mrinalini_classical_bhakti_idol.png
-        caption: Mrinalini Jai — Top 7, Classical Bhakti Idol
 
   - year: 2026
     sortOrder: 1
@@ -16,16 +15,20 @@ achievements:
     media:
       - type: youtube
         url: https://youtu.be/0cXb0z39MZI
-        caption: Sravani Nagella — 1st prize, Senior Vocal
       - type: youtube
         url: https://youtu.be/Hd1ZjZolvwo
-        caption: Group Vocal — 1st prize (Manasa, Yuthika, Mridula & Harinee)
       - type: youtube
         url: https://youtube.com/shorts/ac4NVAO9DHQ
-        caption: Praharshitha Madhusudanan — 1st prize, Violin Solo Junior
       - type: youtube
         url: https://youtube.com/shorts/kZmQQCvGG_U
-        caption: Preeti Radhakrishnan — 2nd prize, Vocal Senior
+      - type: photo
+        src: /assets/dhwani_purandaradasa_prizes.jpeg
+      - type: photo
+        src: /assets/dhwani_purandaradasa_prizes_2.jpeg
+      - type: photo
+        src: /assets/dhwani_purandaradasa_prizes_3.jpeg
+      - type: photo
+        src: /assets/dhwani_purandhara_dasa_prizes.jpeg
 
   - year: 2026
     sortOrder: 2
@@ -33,28 +36,20 @@ achievements:
     media:
       - type: photo
         src: /assets/2026_singai_varnam_kriti_1st.jpg
-        caption: Varnam/Kriti category — 1st prize
       - type: photo
         src: /assets/2026_singai_junior_1st.jpg
-        caption: Junior category — 1st prize
       - type: photo
         src: /assets/2026_singai_yuthikasree_1st.jpg
-        caption: Yuthikasree — 1st prize (Violin Junior)
       - type: photo
         src: /assets/2026_singai_yadhana_2nd.jpg
-        caption: Yadhana — 2nd prize (Violin Junior)
       - type: photo
         src: /assets/2026_singai_sahana_arun_2nd.jpg
-        caption: Sahana & Arun — 2nd prize (Vocal Junior)
       - type: photo
         src: /assets/2026_singai_mahathi_ashivtha_3rd.jpg
-        caption: Mahathi & Ashivtha — 3rd prize (Violin Open)
       - type: photo
         src: /assets/2026_singai_vaibhav.jpg
-        caption: Vaibhav — Singai Palliya Virudhu
       - type: photo
         src: /assets/2026_singai_student_performance.jpg
-        caption: Student performance at Singai Palliya Virudhu
 
   - year: 2024
     sortOrder: 1
@@ -68,7 +63,6 @@ achievements:
     media:
       - type: photo
         src: /assets/students_achievements/aparajith_avvayar_vizha.png
-        caption: Aparajith — 3rd prize, Avvayar Vizha (STLCS)
 
   - year: 2024
     sortOrder: 2
@@ -76,13 +70,9 @@ achievements:
     media:
       - type: photo
         src: /assets/students_achievements/papanasam_sivan_2024/aarathi_1st_seniorvocal.png
-        caption: Aarathi Venugopal — 1st prize, Senior Vocal
       - type: photo
         src: /assets/students_achievements/papanasam_sivan_2024/sahana_and_arun_1st_juniorgroup.png
-        caption: Sahana & Arun — 1st prize, Junior Group
       - type: photo
         src: /assets/students_achievements/papanasam_sivan_2024/rijupt_papanasam_sivan.png
-        caption: Rijupt — Papanasam Sivan Competition
       - type: photo
         src: /assets/students_achievements/papanasam_sivan_2024/students_prizes_papanasam_sivan.png
-        caption: Dhwani students — Papanasam Sivan Competition 2024

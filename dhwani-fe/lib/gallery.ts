@@ -14,11 +14,14 @@ const EXCLUDED = new Set([
   "kamakshi_amman.jpg",
   "Pravarthika.png",
   "bm_violin_1.jpg",
+  "mrinalini_ramkumar_1stprize_juniorsolo.jpg",
+  "gayathri_karthik.png",
 ]);
 
 function isExcluded(filename: string): boolean {
   if (EXCLUDED.has(filename)) return true;
   if (/dhwani.*logo/i.test(filename)) return true;
+  if (/aunty\.(jpe?g|png)$/i.test(filename)) return true;
   return false;
 }
 

@@ -5,7 +5,6 @@ pastWork:
     media:
       - type: youtube
         url: https://www.youtube.com/watch?v=HleC4LCQXg8
-        caption: The viral Podi Song (23K views on YouTube)
 
   - year: 2020
     sortOrder: 101
@@ -13,7 +12,6 @@ pastWork:
     media:
       - type: youtube
         url: https://www.youtube.com/watch?v=w5TiZSQL7i0
-        caption: Film songs in Shuddha Dhanyasi
 
   - year: 2025
     sortOrder: 1
@@ -21,10 +19,8 @@ pastWork:
     media:
       - type: youtube
         url: https://youtu.be/s0iKnF4vfQY
-        caption: Lalitha RTP — choir performance
       - type: youtube
         url: https://youtu.be/oez8spD1oyE
-        caption: Lalitha RTP — Trikaalam
 
   - year: 2025
     sortOrder: 2
@@ -32,7 +28,6 @@ pastWork:
     media:
       - type: youtube
         url: https://youtu.be/fzy5cK0uCas
-        caption: Gamakas workshop for SIOC
 
   - year: 2022
     sortOrder: 3
@@ -40,22 +35,16 @@ pastWork:
     media:
       - type: photo
         src: /assets/bm_salim_1.jpeg
-        caption: SIOC team with Salim-Sulaiman at the Indian High Commissioner's residence
       - type: photo
         src: /assets/bm_salim_2.jpeg
-        caption: Rehearsal for the Salim-Sulaiman concert
       - type: photo
         src: /assets/sioc_trainer_1.jpg
-        caption: Bharati Murali conducting the SIOC choir
       - type: photo
         src: /assets/bm_sioc_students_3.jpg
-        caption: SIOC choir training session
       - type: photo
         src: /assets/bm_sioc_students_4.jpg
-        caption: SIOC Choir with Bharati Murali
       - type: photo
         src: /assets/bm_sioc_students_5.jpg
-        caption: SIOC concert debut conducting
 
   - year: 2021
     sortOrder: 4
@@ -63,7 +52,5 @@ pastWork:
     media:
       - type: photo
         src: /assets/bm_sioc_students_1.jpg
-        caption: SIOC Athma Ghanam — choir training
       - type: photo
         src: /assets/bm_sioc_students_2.jpg
-        caption: Athma Ghanam rehearsal session

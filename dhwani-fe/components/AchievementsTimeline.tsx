@@ -32,12 +32,11 @@ function FeaturedAchievement({ entry }: { entry: AchievementEntry }) {
           <div className="overflow-hidden rounded-xl shadow-md ring-1 ring-cyan/20">
             <FramedPhoto
               src={singlePhoto}
-              alt={entry.media[0].caption}
+              alt={entry.title}
               sizes="(max-width: 768px) 92vw, 28rem"
               priority
             />
           </div>
-          <figcaption className="mt-3 text-sm text-muted">{entry.media[0].caption}</figcaption>
         </figure>
       ) : (
         <MediaCarousel media={entry.media} label={`${entry.year} — ${entry.title}`} centered />

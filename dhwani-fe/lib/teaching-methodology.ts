@@ -18,3 +18,7 @@ export function getTeachingMethodology(): TeachingMethodologyEntry[] {
   const data = parse(file) as TeachingMethodologyFile;
   return data.teachingMethodology;
 }
+
+export function getSampleLesson(): TeachingMethodologyEntry {
+  return getTeachingMethodology()[0];
+}

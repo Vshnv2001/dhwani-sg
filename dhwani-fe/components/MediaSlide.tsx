@@ -3,6 +3,7 @@ import LocalVideo from "@/components/LocalVideo";
 import MediaFrame from "@/components/MediaFrame";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import type { MediaItem } from "@/lib/media-types";
+import { getMediaCaption } from "@/lib/media-caption";
 
 type MediaSlideProps = {
   item: MediaItem;
@@ -10,11 +11,13 @@ type MediaSlideProps = {
 };
 
 export function MediaSlide({ item, priority = false }: MediaSlideProps) {
+  const caption = getMediaCaption(item);
+
   if (item.type === "youtube" && item.url) {
     return (
       <MediaFrame>
         <div className="absolute inset-x-3 top-1/2 aspect-video w-[calc(100%-1.5rem)] -translate-y-1/2">
-          <YouTubeEmbed youtubeUrl={item.url} title={item.caption} fillParent />
+          <YouTubeEmbed youtubeUrl={item.url} title={caption} fillParent />
         </div>
       </MediaFrame>
     );
@@ -24,14 +27,14 @@ export function MediaSlide({ item, priority = false }: MediaSlideProps) {
     return (
       <MediaFrame>
         <div className="absolute inset-x-3 top-1/2 aspect-video w-[calc(100%-1.5rem)] -translate-y-1/2">
-          <LocalVideo src={item.src} title={item.caption} fillParent />
+          <LocalVideo src={item.src} title={caption} fillParent />
         </div>
       </MediaFrame>
     );
   }
 
   if (item.type === "photo" && item.src) {
-    return <FramedPhoto src={item.src} alt={item.caption} priority={priority} />;
+    return <FramedPhoto src={item.src} alt={caption} priority={priority} />;
   }
 
   return null;

@@ -25,3 +25,11 @@ export function FacebookIcon({ className = "h-5 w-5" }: ContactIconProps) {
     </svg>
   );
 }
+
+export function YouTubeIcon({ className = "h-5 w-5" }: ContactIconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M21.8 8.001a2.749 2.749 0 0 0-1.946-1.955C18.077 5.75 12 5.75 12 5.75s-6.077 0-7.854.296A2.749 2.749 0 0 0 2.2 8.001 28.66 28.66 0 0 0 1.9 12a28.66 28.66 0 0 0 .3 3.999 2.749 2.749 0 0 0 1.946 1.955c1.777.296 7.854.296 7.854.296s6.077 0 7.854-.296a2.749 2.749 0 0 0 1.946-1.955A28.66 28.66 0 0 0 22.1 12a28.66 28.66 0 0 0-.3-3.999ZM10 15.138V8.862L15.5 12 10 15.138Z" />
+    </svg>
+  );
+}

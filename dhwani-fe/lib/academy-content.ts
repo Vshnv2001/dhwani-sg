@@ -19,7 +19,7 @@ export const curriculum = [
 export const contact = {
   location: "Hougang, Singapore",
   email: "dhwanimusicacademysg@gmail.com",
-  demoUrl: "https://bit.ly/dhwani-lesson-demo",
+  demoUrl: "https://youtu.be/PpQM9xuw2Vo",
   instagram: {
     handle: "bharati.murali",
     url: "https://www.instagram.com/bharati.murali",
@@ -27,6 +27,16 @@ export const contact = {
   facebook: {
     url: "https://www.facebook.com/bharati.muralidharan.3",
   },
+  youtube: [
+    {
+      label: "Kitchen Kutcheri",
+      url: "https://www.youtube.com/@kitchenkutcheri874",
+    },
+    {
+      label: "Dhwani Music Academy",
+      url: "https://www.youtube.com/channel/UC8panO2OOAGuejtTBqYzsLg",
+    },
+  ],
 };
 
 export const teacherIntro =
