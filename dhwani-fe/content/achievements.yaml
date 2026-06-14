@@ -69,3 +69,20 @@ achievements:
       - type: photo
         src: /assets/students_achievements/aparajith_avvayar_vizha.png
         caption: Aparajith — 3rd prize, Avvayar Vizha (STLCS)
+
+  - year: 2024
+    sortOrder: 2
+    title: Papanasam Sivan Competition
+    media:
+      - type: photo
+        src: /assets/students_achievements/papanasam_sivan_2024/aarathi_1st_seniorvocal.png
+        caption: Aarathi Venugopal — 1st prize, Senior Vocal
+      - type: photo
+        src: /assets/students_achievements/papanasam_sivan_2024/sahana_and_arun_1st_juniorgroup.png
+        caption: Sahana & Arun — 1st prize, Junior Group
+      - type: photo
+        src: /assets/students_achievements/papanasam_sivan_2024/rijupt_papanasam_sivan.png
+        caption: Rijupt — Papanasam Sivan Competition
+      - type: photo
+        src: /assets/students_achievements/papanasam_sivan_2024/students_prizes_papanasam_sivan.png
+        caption: Dhwani students — Papanasam Sivan Competition 2024
