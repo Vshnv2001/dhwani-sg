@@ -16,6 +16,8 @@ const EXCLUDED = new Set([
   "bm_violin_1.jpg",
   "mrinalini_ramkumar_1stprize_juniorsolo.jpg",
   "gayathri_karthik.png",
+  "sravani_1.jpg",
+  "dhwani_show.png",
 ]);
 
 function isExcluded(filename: string): boolean {
