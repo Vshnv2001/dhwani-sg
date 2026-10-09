@@ -110,14 +110,22 @@ export default function IsaiTamizhShowModal() {
               </div>
             </dl>
 
-            <a
-              href={isaiTamizhShow.rsvpUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-5 inline-flex w-full items-center justify-center rounded-full bg-red-accent px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-orange sm:w-auto"
-            >
-              RSVP
-            </a>
+            <div className="mt-5 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
+              <a
+                href={isaiTamizhShow.rsvpUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full bg-red-accent px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-orange"
+              >
+                RSVP
+              </a>
+              <a
+                href={`mailto:${isaiTamizhShow.email}?subject=${encodeURIComponent("Isai Tamizh Irai Tamizh")}`}
+                className="inline-flex items-center justify-center rounded-full border-2 border-navy px-6 py-3 text-sm font-semibold uppercase tracking-wider text-navy transition-colors hover:bg-navy/5"
+              >
+                Email us
+              </a>
+            </div>
             <p className="mt-3 text-xs text-muted">
               One response per family or guest group. 
             </p>
