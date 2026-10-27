@@ -111,14 +111,9 @@ export default function IsaiTamizhShowModal() {
             </dl>
 
             <div className="mt-5 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
-              <a
-                href={isaiTamizhShow.rsvpUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full bg-red-accent px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-orange"
-              >
-                RSVP
-              </a>
+              <span className="inline-flex items-center justify-center rounded-full bg-neutral-100 px-6 py-3 text-sm font-semibold uppercase tracking-wider text-navy ring-1 ring-navy/15">
+                Registration Closed
+              </span>
               <a
                 href={`mailto:${isaiTamizhShow.email}?subject=${encodeURIComponent("Isai Tamizh Irai Tamizh")}`}
                 className="inline-flex items-center justify-center rounded-full border-2 border-navy px-6 py-3 text-sm font-semibold uppercase tracking-wider text-navy transition-colors hover:bg-navy/5"
@@ -127,7 +122,7 @@ export default function IsaiTamizhShowModal() {
               </a>
             </div>
             <p className="mt-3 text-xs text-muted">
-              One response per family or guest group. 
+              Registration is now closed. We look forward to seeing you at the show!
             </p>
           </div>
         </div>

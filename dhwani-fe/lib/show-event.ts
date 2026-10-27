@@ -10,6 +10,4 @@ export const isaiTamizhShow = {
   venue: "Woodlands Library Auditorium",
   address: "900, South Woodlands Drive, #01-03 Civic Centre, Singapore 730900",
   email: "dhwanimusicacademysg@gmail.com",
-  rsvpUrl:
-    "https://docs.google.com/forms/d/e/1FAIpQLSeWMBQj9dN-bgkv4eN6M9-O5zUi3iVg2f3dRh3c3_pWo452Ig/viewform?usp=header",
 } as const;
